@@ -5,6 +5,7 @@ import './App.css'
 import NavBar from './Components/Navbar'
 import { Outlet } from 'react-router-dom'
 import Footer from './Components/Footer'
+import Card from './Components/Card'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,6 +14,7 @@ function App() {
     <>
      <NavBar></NavBar>
      <Outlet></Outlet>
+     
      <Footer></Footer>
     </>
   )

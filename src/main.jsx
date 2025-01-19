@@ -9,12 +9,20 @@ import {
 import Singup from './Components/Singup.jsx';
 import Login from './Components/Login.jsx';
 import ContextPro from './Components/ContextPro.jsx';
+import Home from './Components/Home.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    children:[
+      {
+        path:'/',
+        element:<Home></Home>
+
+      },
+    ]
   },
   {
     path:'/login',
